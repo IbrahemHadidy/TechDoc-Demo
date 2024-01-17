@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Technical Documentation</title>
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a class="nav-link" href="#HTML_and_CSS">HTML and CSS</a>
+    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#APIs_(Application_Programming_Interfaces)">APIs (Application Programming Interfaces)</a>
+    <a class="nav-link" href="#Version_Control">Version Control</a>
+  </nav>
+  <main id="main-doc">
+    <section id="HTML_and_CSS" class="main-section">
+      <header>HTML and CSS</header>
+      <p>HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are fundamental technologies for building web pages.</p>
+      <p>In HTML, you define the structure of your content, while CSS is used for styling and layout.</p>
+      <code>
+        &lt;html&gt;<br>
+        &nbsp;&nbsp;&lt;head&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Web Page&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;/head&gt;<br>
+        &nbsp;&nbsp;&lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a sample paragraph.&lt;/p&gt;<br>
+        &nbsp;&nbsp;&lt;/body&gt;<br>
+        &lt;/html&gt;
+      </code>
+      <ul>
+        <li>HTML elements provide structure to your content.</li>
+        <li>CSS allows you to style your HTML elements.</li>
+        <li>Combining both enables you to create visually appealing web pages.</li>
+      </ul>
+      <code>
+        /* CSS Style Example */<br>
+        h1 {<br>
+        &nbsp;&nbsp;color: #3498db;<br>
+        &nbsp;&nbsp;font-family: 'Arial', sans-serif;<br>
+        }
+      </code>
+      <code>
+        &lt;p&gt;Another paragraph&lt;/p&gt;
+      </code>
+      <code>
+        /* Another CSS Style Example */<br>
+        p {<br>
+        &nbsp;&nbsp;color: #2ecc71;<br>
+        }
+      </code>
+    </section>
+
+    <section id="JavaScript_and_Java" class="main-section">
+      <header>JavaScript and Java</header>
+      <p>JavaScript is a versatile scripting language used to enhance interactivity in web pages. Java, on the other hand, is a general-purpose programming language.</p>
+      <p>JavaScript example:</p>
+      <code>
+        // Simple JavaScript function<br>
+        function greet(name) {<br>
+        &nbsp;&nbsp;return 'Hello, ' + name + '!';<br>
+        }<br>
+        // Call the function<br>
+        console.log(greet('World')); // Output: Hello, World!
+      </code>
+      <ul>
+        <li>JavaScript is commonly used for client-side scripting in web development.</li>
+        <li>Java is a widely-used programming language known for its portability and reliability.</li>
+        <li>Understanding both languages is beneficial for full-stack development.</li>
+      </ul>
+      <code>
+        // Another JavaScript example<br>
+        const array = [1, 2, 3];<br>
+        array.forEach(item => {<br>
+        &nbsp;&nbsp;console.log(item);<br>
+        });
+      </code>
+      <code>
+        &lt;script type="text/javascript"&gt;<br>
+        &nbsp;&nbsp;document.write("Hello, World!");<br>
+        &lt;/script&gt;
+      </code>
+      <code>
+        // Java Example<br>
+        public class HelloWorld {<br>
+        &nbsp;&nbsp;public static void main(String[] args) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, World!");<br>
+        &nbsp;&nbsp;}<br>
+        }
+      </code>
+    </section>
+
+    <section id="Responsive_Design" class="main-section">
+      <header>Responsive Design</header>
+      <p>Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
+      <p>Key concepts:</p>
+      <ul>
+        <li>Fluid grids</li>
+        <li>Flexible images</li>
+        <li>Media queries</li>
+      </ul>
+      <p>By implementing responsive design, websites can provide a better user experience across different devices, including desktops, tablets, and smartphones.</p>
+      <code>
+        /* Responsive CSS Example */<br>
+        @media only screen and (max-width: 600px) {<br>
+        &nbsp;&nbsp;body {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;font-size: 14px;<br>
+        &nbsp;&nbsp;}<br>
+        }
+      </code>
+      <code>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      </code>
+    </section>
+
+    <section id="APIs_(Application_Programming_Interfaces)" class="main-section">
+      <header>APIs (Application Programming Interfaces)</header>
+      <p>APIs allow different software applications to communicate with each other. They define the methods and data formats that applications can use to request and exchange information.</p>
+      <p>Common types of APIs:</p>
+      <ul>
+        <li>Web APIs</li>
+        <li>Library APIs</li>
+        <li>Operating System APIs</li>
+      </ul>
+      <p>APIs play a crucial role in modern web development, enabling the integration of different services and functionalities.</p>
+      <code>
+        // Example API request using fetch<br>
+        fetch('https://api.example.com/data')<br>
+        &nbsp;&nbsp;.then(response => response.json())<br>
+        &nbsp;&nbsp;.then(data => console.log(data))<br>
+        &nbsp;&nbsp;.catch(error => console.error('Error:', error));
+      </code>
+      <code>
+        // Another API Example<br>
+        const apiEndpoint = 'https://api.example.com/data';<br>
+        const data = await fetch(apiEndpoint).then(response => response.json());<br>
+        console.log(data);
+      </code>
+    </section>
+
+    <section id="Version_Control" class="main-section">
+      <header>Version Control</header>
+      <p>Version control is a system that records changes to a file or set of files over time, allowing you to recall specific versions later.</p>
+      <p>Benefits of version control:</p>
+      <ul>
+        <li>Collaboration</li>
+        <li>Undo changes</li>
+        <li>Track changes</li>
+        <li>Branching and merging</li>
+      </ul>
+      <p>Git is a popular distributed version control system widely used in the software development industry.</p>
+      <code>
+        // Basic Git commands<br>
+        git init<br>
+        git add .<br>
+        git commit -m "Initial commit"<br>
+        git branch feature-branch<br>
+        git merge feature-branch
+      </code>
+      <code>
+        git log --oneline
+      </code>
+    </section>
+  </main>
+</body>
+</html>
